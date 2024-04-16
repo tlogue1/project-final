@@ -1,0 +1,55 @@
+[
+    {
+    "_id": "1",
+    "ingredients": [ 
+        "Everything Bagels",
+        "Plain Bagels",
+        "Mix of plain and Everything"
+    ],
+    "img_name": "dowload.jpeg",
+    "name": "Option 1",
+    "pickup":"Yes",
+    "delivery":"Yes"
+},
+
+{
+    "_id": "2",
+    "ingredients": [ 
+        "Plain Cream Cheese",
+        "Veggie Cream Cheese",
+        "Whipped Cream Cheese"
+    ],
+    "img_name": "creamcheese.jpeg",
+    "name": "Option 2",
+    "pickup":"Yes",
+    "delivery":"No"
+},
+
+{
+    "_id": "3",
+    "ingredients": [ 
+        "Dozen Bagels",
+        "Two Cream Cheese Containers",
+        "Two Dozen Cookies"
+    ],
+    "img_name": "party.jpeg",
+    "name": "Option 3",
+    "pickup":"No",
+    "delivery":"Yes"
+},
+
+{
+    "_id": "4",
+    "ingredients": [ 
+        "Two Dozen Bagels",
+        "Three Cream Cheese Containers",
+        "Coffee or Tea"
+    ],
+    "img_name": "office.jpeg",
+    "name": "Option 4",
+    "pickup":"Yes",
+    "delivery":"Yes"
+}
+
+
+]

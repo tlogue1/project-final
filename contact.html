@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Tyler Logue
+        -->
+        <title>Careers/Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="flex-container hide">
+                        <li><a href="https://tlogue1.github.io/csce242/project/part5/mainPage/index.html">Home</a></li> 
+                    <li><a href="https://tlogue1.github.io/csce242/project/part5/locations/index.html">Locations</a></li>
+                    <li><a href="https://tlogue1.github.io/csce242/project/part5/menu/index.html">Menu</a></li>
+                    <li><a href="https://tlogue1.github.io/csce242/project/part5/catering/index.html">Catering</a></li>
+                    <li><a href="#">Careers/Contact</a></li>
+                </ul>
+                </nav>
+                <h1>Small Town Bagels</h1>
+            </header>
+
+            <main id="main-content">
+
+                <div class="flex">
+                    <section class="one">
+                        <div><img src="images/leftside.jpeg"></div>
+                    </section>
+
+
+                    <section class="info-section">
+                        <h2>Contact Us</h2>
+                        <form 
+                        id="contact-form"
+                        action="https://api.web3forms.com/submit" 
+                        method="POST"
+                        >
+                        <input 
+                        type="hidden"
+                        name="access_key"
+                        value="75eab589-aaf5-458a-af7a-f6f86137e274"
+                        />
+
+                        <p>
+                            <label for="name">Name:</label>
+                            <input
+                            id="name"
+                            type="text"
+                            placeholder="Enter First and Last"
+                            name="name"
+                            required
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" required />
+                        </p>
+                        <p>
+                            <label for="birth-date">Birth Date:</label>
+                            <input type="date" id="birth-date" required />
+                        </p>
+                        <p>
+                            <label for="txt-number">Phone Number:</label>
+                            <input type="text" id="txt-number" placeholder="Enter Phone Number" required />
+                        </p>
+                        <p>
+                            <label for="txt-comments">Comments:</label>
+                            <textarea type="text" id="txt-comments" name="txt-comments" placeholder="Enter Comments" required></textarea>
+                        </p>
+                        <input 
+                        type="hidden"
+                        name="redirect"
+                        value="https://web3forms.com/success"
+                        />
+                        <input
+                        type="hidden"
+                        name="subject"
+                        value="Contact from My Website"
+                        />
+                    <input type="hidden" name="from_name" value="My Website" />
+
+                    <p>
+                        <button type="submit">Submit Form</button>
+                    </p>
+
+                    <p id="result"></p>
+                    </form>
+                    </section>
+
+                    <sections class="three">
+                        <div><img src="images/right-sde.png"></div>
+                    </sections>
+                </div>
+                
+            </main>
+        </div>
+        <script src="contact.js"></script>
+    </body>
+</html>

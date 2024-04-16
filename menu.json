@@ -1,0 +1,81 @@
+[
+    {
+        "_id": "1",
+        "ingredients": [ 
+            "Plain Bagel",
+            "Cream Cheese",
+            "Toasted"
+        ],
+        "img_name": "bagel-creamcheese.jpeg",
+        "name": "Bagel 1",
+        "toasted":"Yes",
+        "catering": "Available for Catering"
+    },
+
+    {
+        "_id": "2",
+        "ingredients": [ 
+            "Bacon",
+            "Egg",
+            "American Cheese"
+        ],
+        "img_name": "baconeggandcheese.jpeg",
+        "name": "Bagel 2",
+        "toasted":"Yes",
+        "catering": "Available for Catering"
+    },
+
+    {
+        "_id": "3",
+        "ingredients": [ 
+            "Everything Bagel",
+            "Cream Cheese",
+            "Locks"
+        ],
+        "img_name": "locks.jpeg",
+        "name": "Bagel 3",
+        "toasted":"No",
+        "catering": "Not Available for Catering"
+    },
+
+    {
+        "_id": "4",
+        "ingredients": [ 
+            "Plain Bagel",
+            "Peanut Butter",
+            "Grape Jelly"
+        ],
+        "img_name": "pbandj.jpeg",
+        "name": "Bagel 4",
+        "toasted":"No",
+        "catering": "Available for Catering"
+    },
+
+    {
+        "_id": "5",
+        "ingredients": [ 
+            "Egg",
+            "Sausage",
+            "American Cheese"
+        ],
+        "img_name": "sausage.jpeg",
+        "name": "Bagel 5",
+        "toasted":"Yes",
+        "catering": "Available for Catering"
+    },
+
+    {
+        "_id": "6",
+        "ingredients": [ 
+            "Plain Bagel",
+            "Cream Cheese on the Side",
+            "Option for Toasting"
+        ],
+        "img_name": "plain.jpeg",
+        "name": "Bagel 6",
+        "toasted":"Maybe",
+        "catering": "Available for Catering"
+    }
+
+
+]
