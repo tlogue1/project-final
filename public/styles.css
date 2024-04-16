@@ -1,0 +1,313 @@
+:root {
+    --background-color: #FBF2ED;
+    --primary-color:black;
+    --secondary-color: gray;
+    --hover-color:blue;
+    --box-color:#CDD5C6;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+
+#main-img {
+    width: 80%;
+    border-radius: 10%;
+}
+/* Structure*/
+#content {
+    background: var(--background-color);
+    padding: 5px;
+    width: 100%;
+    /*Center horizontally*/
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+#add-button {
+    font-size: 0.8em;
+    color: black;
+    border: 2px solid black;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+/*main page*/
+#main-header {
+    padding: 5px;
+    border-radius: 2px;
+    margin: 1px;
+    background: var(--background-color);
+}
+
+#main-header h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+#nav-items li {
+    padding: 15px 0;
+    text-align: center;
+}
+#hamburger {
+    padding: 10px;
+}
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+}
+.hide {
+    display: none;
+}
+
+#main-contactPic,
+#main-cateringPic,
+#main-locationPic,
+#main-menuPic {
+    border-radius: 10%;
+}
+
+/*locations*/
+.location-one, 
+.location-two {
+    flex: 1;
+    margin: 0 20px;
+    background-color: var(--background-color);
+    padding: 10px;
+    
+    border-radius: 1px;
+    width: 50%;
+}
+
+/*Navigation*/
+
+#main-nav ul {
+    /*padding-left: 0;*/
+    text-align: center;
+    
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    
+    
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--primary-color)
+    
+    
+}
+.main-bottom a {
+    text-decoration: none;
+    color: var(--primary-color)
+
+}
+.main-bottom a:hover {
+    color: var(--hover-color)
+}
+#main-nav a:hover
+{
+    color: var(--hover-color);
+}
+.main-col {
+    text-align: center;
+    color:var(--background-color);
+    margin: auto;
+}
+/*
+.img {
+    display: block;
+    margin: auto;
+}
+*/
+.main-bottom img {
+    margin: auto;
+    display: block;
+}
+.menu,
+.locations,
+.catering,
+.contact {
+    border-radius: 10%;
+    background:var(--box-color);
+    margin: auto;
+    text-decoration: none;
+}
+
+/*menu*/
+.menu-content,
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-col {
+    text-align: center;
+    color:var(--background-color);
+    padding: 10px;
+}
+
+.bagel1,
+.bagel2,
+.bagel3 {
+  background: var(--box-color);
+  margin: auto;
+}
+
+/*catering*/
+.cater-content {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cater-one {
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.cater-col {
+    text-align: center;
+    color:var(--background-color);
+    padding: 10px;
+}
+
+.option1,
+.option2 {
+    background: var(--box-color);
+    margin: auto;
+}
+
+/*contact*/
+.info-section{
+    text-align: center;
+}
+.three,
+.one,
+.info-section {
+    align-items: center;
+    margin: auto;
+    max-height: 100px;
+}
+
+form textarea {
+    max-height: 100px;
+  }
+
+
+
+
+
+/*Typography*/
+h1 {
+    color: var(--secondary-color);
+}
+h3 {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
+    color: var(--primary-color)
+}
+
+.hidden {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+
+@media (min-width: 900px) {
+
+    #main-nav ul,
+    .main-bottom {
+        display: flex;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    #main-img img {
+        display: flex;
+        align-self: center;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+    
+
+
+    .main-bottom section {
+        padding: 5px 20px; 
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        padding: 5px 20px;
+       
+    }
+    
+    .flex-container img {
+        margin: auto;
+        height: 300px;
+        width: 80%;
+        align-self: center;
+    }
+
+    .main-bottom img{
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
+    }
+    #hamburger {
+        display: none;
+    }
+    #nav-items {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .location-one {
+        flex: 1;
+    }
+    .location-two {
+        flex: 2;
+    }
+    .location-two img {
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
+    }
+    .menu-col {
+        flex: 1 ;
+      }
+    .cater-one {
+        flex: 1;
+      }
+
+    .cater-two {
+        flex:2;
+      }
+
+    .cater-col {
+        flex: 1;
+      }
+
+    
+    
+    
+}

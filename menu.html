@@ -5,12 +5,12 @@
             Author: Tyler Logue
         -->
         <title>Menu</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="public/styles.css">
         
     </head>
 
     <body>
-        <div id="content">
+        <div id="menu-content">
             <header id="main-header">
                 <nav id="main-nav">
                     <div id="hamburger">
@@ -22,70 +22,64 @@
                         <div></div>
                     </div>
                     <ul id="nav-items" class="flex-container hide">
-                        <li><a href="https://tlogue1.github.io/csce242/project/part5/mainPage/index.html">Home</a></li> 
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/locations/index.html">Locations</a></li>
+                        <li><a href="mainPage.html">Home</a></li> 
+                    <li><a href="locations.html">Locations</a></li>
                     <li><a href="#">Menu</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/catering/index.html">Catering</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/contact/index.html">Careers/Contact</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="contact.html">Careers/Contact</a></li>
                 </ul>
                 </nav>
                 <h1>Small Town Bagels</h1>
             </header>
-
-            <main>
-                <div id="menu-items"></div>
-            </main>
-
-            <!--
+        
+            
                 
             <main id="main-content">
-                <h2>Our Menu</h2>
-                <section class="content">
-                    <section class="col1of3">
+                <h2>Our Menu<a href="#" id="add-button">+</a></h2>
+                <section class="menu-content">
+                    <section class="menu-col">
                         <div class="bagel1">
-                            <div class="popup" onclick="myFunction()"><h3>Bagel 1</h3>
-                                <span class="popuptext" id="myPopup">Plain Bagel with Cream Cheese</span>
-                            </div>
-                            <img src="images/bagel-creamcheese.jpeg">
+                            <h3><a href="#">Bagel 1</a></h3>
+                            <img src="public/images/bagel-creamcheese.jpeg">
                             <p>Plain Bagel with Cream Cheese</p>
                         </div>
                     </section>
-                    <section class="col1of3">
+                    <section class="menu-col">
                         <div class="bagel2">
                             <h3><a href="#">Bagel 2</a></h3>
-                            <img src="images/baconeggandcheese.jpeg">
+                            <img src="public/images/baconeggandcheese.jpeg">
                             <p>Bacon Egg and Cheese</p>
                         </div>
                     </section>
-                    <section class="col1of3">
+                    <section class="menu-col">
                         <div class="bagel3">
                            <h3><a href="#">Bagel 3</a></h3>
-                            <img src="images/locks.jpeg">
+                            <img src="public/images/locks.jpeg">
                             <p>Bagel with Locks</p>
                         </div>
                     </section>
                 </section>
 
 
-                <section class="content">
-                    <section class="col1of3">
+                <section class="content2">
+                    <section class="menu-col">
                         <div class="bagel1">
                             <h3><a href="#">Bagel 4</a></h3>
-                            <img src="images/pbandj.jpeg">
+                            <img src="public/images/pbandj.jpeg">
                             <p>Peanut Butter and Jelly</p>
                         </div>
                     </section>
-                    <section class="col1of3">
+                    <section class="menu-col">
                         <div class="bagel2">
                             <h3><a href="#">Bagel 5</a></h3>
-                            <img src="images/sausage.jpeg">
+                            <img src="public/images/sausage.jpeg">
                             <p>Sausage Egg and Cheese</p>
                         </div>
                     </section>
-                    <section class="col1of3">
+                    <section class="menu-col">
                         <div class="bagel3">
                            <h3><a href="#">Bagel 6</a></h3>
-                            <img src="images/plain.jpeg">
+                            <img src="public/images/plain.jpeg">
                             <p>Plain Bagel</p>
                         </div>
                     </section>
@@ -94,10 +88,10 @@
 
             </main>
 
-            -->
+            
 
 
         </div>
-        <script src="menu.js"></script>
+        <script src="public/menu.js"></script>
     </body>
 </html>

@@ -5,7 +5,7 @@
             Author: Tyler Logue
         -->
         <title>Main Page</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="public/styles.css">
     </head>
 
     <body>
@@ -23,10 +23,10 @@
                 <ul id="nav-items" class="flex-container hide">
                    
                     <li><a href="#">Home</a></li> 
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/locations/index.html">Locations</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/menu/index.html">Menu</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/catering/index.html">Catering</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/contact/index.html">Careers/Contact</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="contact.html">Careers/Contact</a></li> 
                 </ul>
             </nav>
             <h1>Small Town Bagels</h1>
@@ -35,37 +35,35 @@
         <main id="main-content">
             
             <div class="flex-container">
-                <img src="images/mainpicUse.jpeg" alt="image">
+                <img src="public/images/mainpicUse.jpeg" alt="image" id="main-img">
             </div> 
-            <section class="bottom">
-                <section class="bottom">
-                    <section class="col1of4">
+            <section class="main-bottom">
+                <section class="main-bottom">
+                    <section class="main-col">
                         <div class="menu">
-                            <h3><a href="https://tlogue1.github.io/csce242/project/part5/menu/index.html">Menu</a></h3>
-                            <img src="images/bagelmenutoUse.jpeg">
-                            <h3>View Our Menu</h3>
+                           <h3><a href="menu.html">View our Menu</a></h3>
+                            <img src="public/images/bagelmenutoUse.jpeg" id="main-menuPic">     
                         </div>
                     </section>
-                    <section class="col1of4">
+
+                    <section class="main-col">
                         <div class="locations">
-                            <h3><a href="https://tlogue1.github.io/csce242/project/part5/locations/index.html">Locations</a></h3>
-                            <img src="images/location-mainpage.png">
-                            <h3>View Our Locations</h3>
-                            <div></div>
+                           <h3><a href="locations.html">View our Locations</a></h3>
+                            <img src="public/images/location-mainpage.png" id="main-locationPic">                      
                         </div>
+
                     </section>
-                    <section class="col1of4">
+                    <section class="main-col">
                         <div class="catering">
-                           <h3><a href="https://tlogue1.github.io/csce242/project/part5/catering/index.html">Catering</a></h3>
-                            <img src="images/catering-mainpage.jpeg">
-                            <h3>View Catering Menu</h3>
+                         <h3><a href="catering.html">Visit our Catering</a></h3>
+                            <img src="public/images/catering-mainpage.jpeg" id="main-cateringPic">
                         </div>
                     </section>
-                    <section class="col1of4">
+                    
+                    <section class="main-col">
                         <div class="contact">
-                            <h3><a href="https://tlogue1.github.io/csce242/project/part5/contact/index.html">Contact/Careers</a></h3>
-                            <img src="images/contact-mainpage.png">
-                            <h3>Contact Us</h3>
+                            <h3><a href="contact.html">Contact/Careers</a></h3> 
+                            <img src="public/images/contact-mainpage.png" id="main-contactPic">
                         </div>
                     </section>
                </section> 
@@ -79,6 +77,6 @@
 
 
     </div>
-    <script src="script.js"></script>
+    <script src="public/script.js"></script>
     </body>
 </html>
