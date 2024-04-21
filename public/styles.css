@@ -14,6 +14,8 @@ body{
     width: 80%;
     border-radius: 10%;
 }
+
+
 /* Structure*/
 #content {
     background: var(--background-color);
@@ -25,6 +27,18 @@ body{
 
 }
 
+
+/*modal*/
+.bagel {
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+.bagel-name {
+    text-align: center;
+}
 #add-button {
     font-size: 0.8em;
     color: black;
@@ -32,6 +46,91 @@ body{
     padding: 0 4px;
     text-decoration: none;
 }
+#edit-button {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+#delete-button {
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.w3-modal-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 60%;
+    border: 2px solid #401e01;
+  }
+  
+  .w3-container {
+    background: #f2e8dc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  label {
+    display: block;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  #ingredients-p input {
+    margin-top: 5px;
+  }
+
+  #add-ingredients {
+    color: blue;
+    font-size: 0.75em;
+    text-align: right;
+  }
+
+  #ingredients-boxes input {
+    width: 100%;
+  }
+
+
+  #img-prev-section {
+    width: 60px;
+    border: 1px solid #401e01;
+    max-width: 100px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+  }
+  #img-prev {
+    padding: 2.5%;
+    display: block;
+    margin: auto;
+    max-width: 80%;
+  }
+
+  .bagel-inner {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .details {
+    margin-left: 20px;
+    flex: 1;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
 
 /*main page*/
 #main-header {
@@ -58,9 +157,7 @@ body{
     background-color: var(--primary-color);
     margin: 6px 0;
 }
-.hide {
-    display: none;
-}
+
 
 #main-contactPic,
 #main-cateringPic,
@@ -138,7 +235,7 @@ body{
     text-decoration: none;
 }
 
-/*menu*/
+/*menu
 .menu-content,
 .content2 {
   display: flex;
@@ -156,7 +253,7 @@ body{
   background: var(--box-color);
   margin: auto;
 }
-
+*/
 /*catering*/
 .cater-content {
     display: flex;
@@ -209,6 +306,9 @@ h3 {
     color: var(--primary-color);
     text-decoration: none;
     text-align: center;
+}
+h4 {
+    text-align: left;
 }
 h2 {
     text-align: center;
@@ -306,6 +406,23 @@ p {
     .cater-col {
         flex: 1;
       }
+      .columns {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .two-columns div {
+        flex: 1;
+      }
+      .bagel {
+          width: 30%;
+      }
+      .bagels-list {
+        flex: 1;
+      }
+
+      
+  
+
 
     
     

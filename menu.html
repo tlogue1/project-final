@@ -5,7 +5,8 @@
             Author: Tyler Logue
         -->
         <title>Menu</title>
-        <link rel="stylesheet" href="public/styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
     </head>
 
@@ -35,7 +36,107 @@
             
                 
             <main id="main-content">
-                <h2>Our Menu<a href="#" id="add-button">+</a></h2>
+                <h2>Our Menu</h2>
+                <div id ="bagels-list" class="columns"></div>
+
+
+    <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('dialog').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+              <section id="dialog-details">
+                <form id="bagel-form" method="post" class="hidden">
+                    <input type="hidden" id="_id" name="_id">
+                    <p>
+                        <label for="name ">Bagel Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" name="description" required />
+                    </p>
+        
+                    <section class="columns">
+                        <p id="img-prev-section">
+                            <img id="img-prev">
+                        </p>
+                        <p></p>
+                            <label for="img">Upload Image:</label>
+                            <input type="file" id="img" name="img" accept="image/*" />
+                        </p>
+                    </section>
+        
+                    <p id="ingredients-p ">
+                        <label class="inline">Ingredients:</label>
+                        <a href="#" id="add-ingredients">Add Ingredients</a>
+                        <section id="ingredients-boxes"></section>
+                    </p>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+
+                <section id="bagel-details" class="hidden">
+
+                </section>
+            </section>
+          </div>
+        </div>
+      </div>   
+    </div>
+    <h4>Add a Menu Item<a href="#" id="add-button">+</a></h4>
+    <script src="menu.js"></script>
+
+   
+</body>
+</html>
+<!--
+                <div id="dialog" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <div class="w3-container">
+                        <span onclick="document.getElementById('dialog').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                          <section id="dialog-details">
+                            <form id="menu-form" method="post" class="hidden">
+                                <input type="hidden" id="_id" name="_id">
+                                <p>
+                                    <label for="name ">Item Name:</label>
+                                    <input type="text" id="name" name="name" required />
+                                </p>
+                                <p>
+                                    <label for="description">Description:</label>
+                                    <input type="text" id="description" name="description" required />
+                                </p>
+                    
+                                <section class="columns">
+                                    <p id="img-prev-section">
+                                        <img id="img-prev">
+                                    </p>
+                                    <p></p>
+                                        <label for="img">Upload Image:</label>
+                                        <input type="file" id="img" name="img" accept="image/*" />
+                                    </p>
+                                </section>
+                    
+                                <p id="ingredients-p ">
+                                    <label class="inline">Ingredients:</label>
+                                    <a href="#" id="add-ingredients">Add Ingredients</a>
+                                    <section id="ingredients-boxes"></section>
+                                </p>
+                                <p>
+                                    <button type="submit">Submit</button>
+                                </p>
+                            </form>
+            
+                            <section id="ingredient-details" class="hidden">
+            
+                            </section>
+                        </section>
+                      </div>
+                    </div>
+                  </div>   
+
                 <section class="menu-content">
                     <section class="menu-col">
                         <div class="bagel1">
@@ -92,6 +193,5 @@
 
 
         </div>
-        <script src="public/menu.js"></script>
-    </body>
-</html>
+         -->
+       
