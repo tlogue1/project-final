@@ -6,7 +6,7 @@ window.onload = () => {
     document.getElementById("hamburger").onclick = toggleHamburger;
 };
 
-
+/*
 const getCateringOptions = async () => {
     const url = "public/catering.json";
     try {
@@ -55,3 +55,4 @@ const showCateringOptions = async () => {
   };
 
   showCateringOptions();
+  */

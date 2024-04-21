@@ -36,7 +36,7 @@ mongoose
 
     const Bagel = mongoose.model("bagel", bagelSchema);
 
-    app.get("/", (req, res) => {
+    app.get("/mainPage", (req, res) => {
         res.sendFile(__dirname + "/mainPage.html");
     });
 
@@ -48,8 +48,8 @@ mongoose
         res.sendFile(__dirname + "/catering.html");
     });
 
-    app.get("/contacts", (req, res) => {
-        res.sendFile(__dirname + "/contacts.html");
+    app.get("/contact", (req, res) => {
+        res.sendFile(__dirname + "/contact.html");
     });
 
     app.get("/locations", (req, res) => {
