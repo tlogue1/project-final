@@ -7,52 +7,28 @@ window.onload = () => {
 };
 
 /*
-const getCateringOptions = async () => {
-    const url = "public/catering.json";
-    try {
-        const response = await fetch(url);
-        return response.json();
-    } catch (error) {
-        console.log(error);
-    }
+
+const modal = document.getElementById("catering-modal");
+const modalText = document.getElementById("modal-text");
+const links = document.querySelectorAll(".cater-two a");
+
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const text = link.parentElement.querySelector("p").innerText;
+    modalText.innerText = text;
+    modal.style.display = "block";
+  });
+});
+
+const closeModal = () => {
+  modal.style.display = "none";
 };
 
-const showCateringOptions = async () => {
-    const options = await getCateringOptions();
-    const allSections = document.getElementById("catering-options");
-
-    options.forEach((option) => {
-      const optionSection = document.createElement("section");
-      allSections.append(optionSection);
-  
-      optionSection.classList.add("item");
-  
-      const h3 = document.createElement("h3");
-      h3.innerHTML = option.name;
-      optionSection.append(h3);
-  
-      const img = document.createElement("img");
-      img.src = `images/${option.img_name}`;
-      img.alt = item.name;
-      optionSection.append(img);
-  
-      const pickup = document.createElement("p");
-      pickup.innerHTML = `Pickup: ${option.pickup}`;
-      optionSection.append(toasted);
-  
-      const delivery = document.createElement("p");
-      delivery.innerHTML = `Delivery: ${option.delivery}`;
-      optionSection.append(delivery);
-  
-      const ingredients = document.createElement("ul");
-      option.ingredients.forEach((ingredient) => {
-        const li = document.createElement("li");
-        li.textContent = ingredient;
-        ingredients.append(li);
-      });
-      optionSection.append(ingredients);
-    });
-  };
-
-  showCateringOptions();
-  */
+document.querySelector(".close").addEventListener("click", closeModal);
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+*/
