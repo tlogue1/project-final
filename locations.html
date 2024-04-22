@@ -32,37 +32,36 @@
                 <h1>Small Town Bagels</h1>
             </header>
 
-            <main id="main-content">
-                <div class="flex">
+            <main id="main-content-location">
+                <div class="flex-location">
                     <section class="location-one">
                         <div><img src="images/map.jpeg"></div>
                         <h1>Locations</h1>
-                        <h2>Location 1:</h2>
+                        <h4>Location 1:</h4>
                         <p>1014 Greene St, Columbia, SC 29208</p>
-                        <h2>Location 2:</h2>
-                        <p>301 Main St. Columbia, SC 29208</p>
-                        <button type ="location-button">Click to add a Recommended Location</button>
-                        <section id="location-section">
-                            <form id="location-form" method="post" class="hidden">
-                            <input type="hidden" id="_id" name="_id">
-                            <p>
-                                <h3>Add a Location</h3>
-                                <label for="location-name">Location Name:</label>
-                                <input type="text" id="location-name" name="location-name" required />
-                            </p>
-                            <p>
-                                <label for="location-address">Enter Address:</label>
-                                <input type="text" id="location-address" name="location-address" required />
-                            </p>
-                            <p>
-                                <button type="submit">Submit</button>
-                            </p>
-                        </form>
+                        <h4>Location 2:</h4>
+                        <p>301 Main St. Columbia, SC 29208</p> 
+
+                        <button id ="location-button">Click to add a Recommended Location</button>
+                        <section id="location-section"> </section>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>
+                                    <label for="name">Name:</label>
+                                    <input id="name" type="text" placeholder="Enter First and Last"name="name" required/>
+                                </p>
+                                <p>
+                                    <label for="address">Address of Location:</label>
+                                    <input id="address" type="text" placeholder="Enter Address" name="address" required/>
+                                </p>
+                                <p>
+                                    <button id="submit-button" type="submit">Submit Form</button>
+                                </p>
+                            </div>
+                        </div>
                         </section>
 
-                        <section id="location-details" class="hidden"></section>
-
-                    </section>
                     <section class="location-two">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9311736724267!2d-81.03599318813738!3d33.99430157306693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb285ae1b4bf%3A0xc74ecb9a758c17c2!2s1014%20Greene%20St%2C%20Columbia%2C%20SC%2029201!5e0!3m2!1sen!2sus!4v1710888677200!5m2!1sen!2sus" 
                         width="600" 
@@ -71,9 +70,13 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        </iframe>
 
                     </section>
+                    
+
+
+
                 </div>
 
             </main>
