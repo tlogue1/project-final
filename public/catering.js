@@ -5,8 +5,21 @@ const toggleHamburger = () => {
 window.onload = () => {
     document.getElementById("hamburger").onclick = toggleHamburger;
 };
-
 /*
+const images = document.querySelectorAll("#dialog-details img");
+
+images.forEach((image) => {
+  image.addEventListener("click", (e) => {
+    e.preventDefault();
+    const name = image.previousElementSibling.textContent;
+    const description = image.parentElement.nextElementSibling.textContent;
+    document.getElementById("name").value = name;
+    document.getElementById("description").value = description;
+    document.getElementById("dialog").style.display = "block";
+  });
+});
+
+
 
 const modal = document.getElementById("catering-modal");
 const modalText = document.getElementById("modal-text");

@@ -35,33 +35,7 @@ const showBagels = async () => {
       };
     });
   };
-/*
 
-const showBagels = async () => {
-    let bagels = await getBagels();
-    let bagelsDiv = document.getElementById("bagels-list");
-    bagelsDiv.innerHTML = "";
-    bagels.forEach((bagel) => {
-        const section = document.createElement("section");
-        section.classList.add("bagel");
-        bagelsDiv.append(section);
-
-        const a = document.createElement("a");
-        a.href = "#";
-        section.append(a);
-        
-    
-        const img = document.createElement("img");
-        img.src = bagel.img;
-        a.append(img);
-    
-        a.onclick = (e) => {
-          e.preventDefault();
-          displayDetails(bagel);
-        };
-      });
-    };
-*/
 
 const displayDetails = (bagel) => {
     openDialog("bagel-details");

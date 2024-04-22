@@ -29,6 +29,8 @@ body{
 
 
 /*modal*/
+
+
 .bagel {
     background-color: #f2f2f2;
     padding: 5px;
@@ -215,12 +217,7 @@ body{
     color:var(--background-color);
     margin: auto;
 }
-/*
-.img {
-    display: block;
-    margin: auto;
-}
-*/
+
 .main-bottom img {
     margin: auto;
     display: block;
@@ -235,25 +232,7 @@ body{
     text-decoration: none;
 }
 
-/*menu
-.menu-content,
-.content2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.menu-col {
-    text-align: center;
-    color:var(--background-color);
-    padding: 10px;
-}
 
-.bagel1,
-.bagel2,
-.bagel3 {
-  background: var(--box-color);
-  margin: auto;
-}
-*/
 /*catering*/
 .cater-content {
     display: flex;
