@@ -23,9 +23,14 @@ const storage = multer.diskStorage({
 });
 */
 mongoose
-    .connect("mongodb+srv://tylerlogue3:HwKBox8tlEn2Ylb8@work.5tc5e9m.mongodb.net/?retryWrites=true&w=majority")
-    .then(() => console.log("connected to MongoDB"))
-    .catch(error => console.log("couldn't connect to mongodb", error));
+    .connect("mongodb+srv://tylerlogue3:HwKBox8tlEn2Ylb8@work.5tc5e9m.mongodb.net/?retryWrites=true&w=majority"
+    )
+    .then(() => {
+        console.log("connected to MongoDB");
+    })
+    .catch((error) => {
+        console.log("couldn't connect to mongodb", error);
+    }); 
 
     const bagelSchema = new mongoose.Schema({
         name: String,
