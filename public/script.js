@@ -14,9 +14,11 @@ window.onload = () => {
 var modal = document.getElementById("myModal");
 var button = document.getElementById("location-button");
 var span = document.getElementsByClassName("close")[0];
+
 button.onclick = function() {
     modal.style.display = "block";
   }
+  
   span.onclick = function() {
     modal.style.display = "none";
   }
