@@ -41,7 +41,7 @@ mongoose
 
     const Bagel = mongoose.model("bagel", bagelSchema);
 
-    app.get("/", (req, res) => {
+    app.get("/mainPage", (req, res) => {
         res.sendFile(__dirname + "/mainPage.html");
     });
 
